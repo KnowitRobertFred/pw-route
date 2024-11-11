@@ -1,0 +1,14 @@
+{
+  "name": "pw-route",
+  "version": "1.0.0",
+  "description": "Use for demo purposes with playwright route and dotenv",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.9.0"
+  }
+}
