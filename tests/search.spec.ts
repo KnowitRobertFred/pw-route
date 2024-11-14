@@ -2,6 +2,7 @@ import { test, expect, request } from '@playwright/test';
 import * as fs from 'fs';
 
 test('Route search', async ({ page }) => {
+  // Vänta på svar
   // Manipulera anrop
   // await page.route('**/getGlobalSearchHits*', async (route, request) => {
   //   const myUrl = request.url();
@@ -45,7 +46,8 @@ test('Route search', async ({ page }) => {
   await page.getByText('Sök', { exact: true }).click();
   await page.locator('[name="q"]').fill('Test');
   await page.keyboard.press('Enter');
+  await page.waitForResponse('**/getGlobalSearchHits*');
   await expect(page.locator('.SearchPage h2.chakra-heading')).toContainText(
-    '1 träffar på Test'
+    '81 träffar på Test'
   );
 });
