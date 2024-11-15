@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "Use for demo purposes with playwright route and dotenv",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "pw": "npx playwright test",
+    "pw:systest1": "npx playwright test --config=playwright.config.systest1.ts",
+    "pw:local": "npm run pw -- --config=playwright.config.ts",
+    "prepw": "echo 'FÖRE'",
+    "postpw": "echo 'EFTER'"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.48.2",
     "@types/node": "^22.9.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }

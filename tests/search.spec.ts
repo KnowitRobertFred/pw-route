@@ -46,8 +46,10 @@ test('Route search', async ({ page }) => {
   await page.getByText('Sök', { exact: true }).click();
   await page.locator('[name="q"]').fill('Test');
   await page.keyboard.press('Enter');
+
+  // Vänta på att svar för anrop
   await page.waitForResponse('**/getGlobalSearchHits*');
   await expect(page.locator('.SearchPage h2.chakra-heading')).toContainText(
-    '81 träffar på Test'
+    '1 träffar på Test'
   );
 });
