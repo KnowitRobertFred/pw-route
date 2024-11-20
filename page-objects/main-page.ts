@@ -1,4 +1,5 @@
 import { Locator, Page } from '@playwright/test';
+import * as fs from 'fs';
 
 class MainPage {
   private pageUrl = '/';
@@ -25,6 +26,14 @@ class MainPage {
   }
 
   async searchFor(searchTerm: string) {
+    // // I page objectet ==>
+    // const path = 'mock-data/globalSearchHits.json';
+    // const responseData = fs.readFileSync(path, 'utf-8');
+    // await this.page.route('**/getGlobalSearchHits*', async (route) => {
+    //   await route.fulfill({ body: responseData });
+    // });
+    // // <==
+
     await this.openSearchButton.click();
     await this.searchInput.fill(searchTerm);
     await this.searchButton.click();

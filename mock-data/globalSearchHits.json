@@ -1,0 +1,36 @@
+{
+  "searchHits": [
+    {
+      "heading": "Testutvecklare",
+      "text": "Vill du vara en del av ett modigt och transparent team som med ett nordiskt tankesätt levererar innovativa lösningar till våra kunder? Knowit Quality ...",
+      "url": "https://www.knowit.se/karriar/lediga-jobb/testutvecklare/?_t_id=BBKTKPIbrvsPkdgVt9brdA%3d%3d&_t_uuid=8tJIlqQYQl-HHTozx208eA&_t_q=Test&_t_tags=siteid%3acc11814c-e0e1-4602-a054-e9fde6a16b50%2clanguage%3asv%2candquerymatch&_t_hit.id=knowitcore_Models_Pages_JobAdPage/_3662a778-a03c-4da3-ada0-685e8629b394_sv&_t_hit.pos=1",
+      "breadcrumbs": [
+        {
+          "name": "Startsida",
+          "url": "/",
+          "isSelected": false
+        },
+        {
+          "name": "Karriär",
+          "url": "/karriar/",
+          "isSelected": false
+        },
+        {
+          "name": "Lediga jobb",
+          "url": "/karriar/lediga-jobb/",
+          "isSelected": false
+        },
+        {
+          "name": "Testutvecklare",
+          "url": "/karriar/lediga-jobb/testutvecklare/",
+          "isSelected": true
+        }
+      ],
+      "hitId": "_3662a778-a03c-4da3-ada0-685e8629b394_sv",
+      "hitType": "knowitcore_Models_Pages_JobAdPage"
+    }
+  ],
+  "totalHits": 1,
+  "hasZeroHits": false,
+  "nextPage": null
+}
